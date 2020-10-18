@@ -1,6 +1,8 @@
 ## JavaScrip-modal
 Simple popup modal created with JavaScript
 
+## See demo here
+https://get-aduser.github.io/JavaScrip-modal/
 
 ## How to use
 
