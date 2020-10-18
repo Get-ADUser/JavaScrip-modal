@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modal example</title>
+        <link href="src/Modal.css" link rel="stylesheet" type="text/css"/>
+        <script src="src/Modal.js"></script>
+		<script>	
+			let modal = new Modal('custom-id', 'body', 'This is a title', '<div>Hello world!</div>', {}, 'kv-modal-size-m');
+			
+			let footer1 = {
+				confirm: false,
+				closeText: 'Close'
+			}
+		</script>
+    </head>
+    <body>
+	<button onclick="modal.showModal()">Open Modal</button>
+	</body>
+</html>
