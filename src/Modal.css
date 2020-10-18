@@ -54,10 +54,11 @@
 	height: 50px;
 	line-height: 50px;
 	border-bottom: 1px solid lightgray;
-	padding: 0px 5px 0px 5px;
+	padding: 0px 10px 0px 10px;
 }
 .kv-title{
 	display: inline-block;
+	font-weight: bold;
 }
 .kv-close{
 	display: inline-block;
@@ -79,7 +80,7 @@
 
 /*Modal content*/
 .kv-content{
-	padding: 0px 5px 0px 5px;
+	padding: 0px 10px 0px 10px;
 }
 
 /*Modal footer*/
@@ -87,7 +88,7 @@
 	height: 50px;
 	line-height: 49px;
 	border-top: 1px solid lightgray;
-	padding: 0px 5px 0px 5px;
+	padding: 0px 10px 0px 10px;
 }
 .kv-confirm-wrapper{
 	text-align: right;
