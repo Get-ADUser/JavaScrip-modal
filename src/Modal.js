@@ -6,7 +6,7 @@ class Modal{
 	/**
 	 * Set modal parameters
 	 *
-	 * @param {string} id - kvmodal
+	 * @param {string} id - kv-modal
 	 * @param {string} attachTo - body
 	 * @param {string} title
 	 * @param {string|HTMLElement} content
