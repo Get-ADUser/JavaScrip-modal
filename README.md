@@ -97,4 +97,15 @@ funtion takes 3 parameter:
 modal.updateModal(title, content, footer);
 ```
 
+## Modal sizing
+
+Modal can have 4 different size (s,m,l,xl)
+
+1. kv-modal-size-s - 300px
+2. kv-modal-size-m - 500px
+3. kv-modal-size-l - 800px
+4. kv-modal-size-xl - 1140px
+
+default is: kv-modal-size-m
+
 
