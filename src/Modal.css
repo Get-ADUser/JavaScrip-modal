@@ -1,0 +1,110 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.kv-button {
+	min-width: 70px;
+    height: 35px;
+	padding: 0px 5px 0px 5px;
+	color: #fff;
+	border: none;
+    background-color: #333a41;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+	cursor: pointer;
+}
+.kv-backdrop button:focus{
+	outline: none;
+}
+.kv-backdrop button:hover{
+	transition: all 0.15s ease;
+	background: #111416;
+	box-shadow: 0px 0px 3px #333a41;
+}
+/*Background*/
+.kv-backdrop{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(30, 30, 30, 0.4);
+	z-index: 3;
+}
+/*Modal*/
+.kv-modal{
+	position: absolute;
+	z-index: 4;
+	background-color: white;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0, .4);
+	max-height: 80vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+/*Modal header*/
+.kv-header{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid lightgray;
+	padding: 0px 5px 0px 5px;
+}
+.kv-title{
+	display: inline-block;
+}
+.kv-close{
+	display: inline-block;
+	float: right;
+	width: 50px;
+	height: 49px;
+	line-height: 51px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+	color: #333a41;
+	cursor: pointer;
+}
+.kv-close:hover{
+	background: white !important;
+	box-shadow: none !important;
+	text-shadow: 0px 0px 1px #333a41;
+}
+
+/*Modal content*/
+.kv-content{
+	padding: 0px 5px 0px 5px;
+}
+
+/*Modal footer*/
+.kv-footer{
+	height: 50px;
+	line-height: 49px;
+	border-top: 1px solid lightgray;
+	padding: 0px 5px 0px 5px;
+}
+.kv-confirm-wrapper{
+	text-align: right;
+}
+.kv-confirm-wrapper button:first-child{
+	margin-right: 5px;
+}
+/** Modal sizes */
+.kv-modal-size-s {
+	width: 300px;
+}
+.kv-modal-size-m {
+	width: 500px;
+}
+.kv-modal-size-l {
+	width: 800px;
+}
+.kv-modal-size-xl {
+	width: 1140px;
+}
