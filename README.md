@@ -18,7 +18,7 @@ Modal takes 6 parameter on instanciation.
 1. Id {string} - set custom id for modal.
 2. Element {string} - set element name where modal is added.
 3. Title {string} - set modal title text.
-4. Content {string|Element} - set modal content (html string or dom element).
+4. Content {string|HTMLElement} - set modal content (html string or dom element).
 5. Footer {object} - set footer data with object and control buttons and button functions.
 6. Size {string} - set size for modal.
 
@@ -90,7 +90,7 @@ To update modal content with javascript.
 
 funtion takes 3 parameter:
 1. title {string} - set tile text.
-2. content {string|element} - set modal content.
+2. content {string|HTMLElement} - set modal content.
 3. footer {object} - set footer data with object and control buttons and button functions.
 
 ```
