@@ -1,2 +1,2 @@
 # JavaScrip-modal
-Simple popup modal created by JavaScript
+Simple popup modal created with JavaScript
