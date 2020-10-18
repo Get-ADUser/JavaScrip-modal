@@ -73,9 +73,9 @@ Default values (Confirm box):
 let footer = {
       confirm: true,
       cancelText: 'Cancel',
-      cancelClick: function(){console.log("Closed");},
+      cancelClick: function(){myCustomFunction();},
       confirmText: 'Update',
-      confirmClick: function(){console.log("Saved / Confirmed");},
+      confirmClick: function(){myCustomDeleteFunction();},
     };
 ```
 
