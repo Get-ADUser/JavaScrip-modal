@@ -13,7 +13,7 @@ https://get-aduser.github.io/JavaScrip-modal/
 <script type="text/javascript" src="Modal.js"></script>
 ```
 
-### Instanciate Modal and set parameters
+### Instantiate Modal and set parameters
 
 Modal takes 6 parameter on instanciation.
 
