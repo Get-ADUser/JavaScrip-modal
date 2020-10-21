@@ -29,6 +29,18 @@
 			
 			let demo5 = new Modal('custom-id', 'body', 'Modal demo 5', '<div>Resize from default size (m) to xl</div>', {}, 'kv-modal-size-xl');
 			
+			let demo6footer = {
+				confirm: true,
+				cancelText: 'Cancel',
+				cancelClick: function(){alert("Cance clikced");},
+				confirmText: 'Update content',
+				confirmClick: function(){callFetch('https://api.github.com/users/hadley/orgs');}
+			}
+			let demo6 = new Modal('custom-id', 'body', 'Modal demo 6', '<div>Call JavaScript Fetch and update content</div>', demo6footer, 'kv-modal-size-xl');
+			
+			function callFetch(){
+				fetch('https://api.github.com/users/hadley/orgs').then((res) => {return res.text()}).then((res) => {demo6.updateModal('Modal demo 6 - conten is now updated', res, false)});
+			}
 		</script>
 		<style>
 			.content{
@@ -51,6 +63,7 @@
 			<button onclick="demo3.showModal()">Open Modal demo 3</button>
 			<button onclick="demo4.showModal()">Open Modal demo 4</button>
 			<button onclick="demo5.showModal()">Open Modal demo 5</button>
+			<button onclick="demo6.showModal()">Open Modal demo 6</button>
 		</div>
 	</body>
 </html>
