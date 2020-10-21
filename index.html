@@ -25,8 +25,9 @@
 				confirmText: 'Update',
 				confirmClick: function(){alert('My custom function is called!');}
 			}
-			let demo4 = new Modal('custom-id', 'body', 'Modal demo 3', '<div>Footer buton changed and funtionality added to buttons </div>', demo4footer, 'kv-modal-size-m');
+			let demo4 = new Modal('custom-id', 'body', 'Modal demo 4', '<div>Footer buton changed and funtionality added to buttons </div>', demo4footer, 'kv-modal-size-m');
 			
+			let demo5 = new Modal('custom-id', 'body', 'Modal demo 5', '<div>Resize from default size (m) to xl</div>', {}, 'kv-modal-size-xl');
 			
 		</script>
 		<style>
@@ -49,6 +50,7 @@
 			<button onclick="demo2.showModal()">Open Modal demo 2</button>
 			<button onclick="demo3.showModal()">Open Modal demo 3</button>
 			<button onclick="demo4.showModal()">Open Modal demo 4</button>
+			<button onclick="demo5.showModal()">Open Modal demo 5</button>
 		</div>
 	</body>
 </html>
