@@ -1,4 +1,9 @@
 /** 
+ * Modals v1: Simple dialogue modal popup
+ * (c) 2020 Karmo V
+ * MIT License
+ * https://github.com/Get-ADUser/JavaScrip-modal
+ *
  * @class Modal - create popup modal
  */
 class Modal{
@@ -72,6 +77,7 @@ class Modal{
 	{
 		let modal = document.querySelector(`#${this.id}`);
 		if (title !== false) {
+			this.title = title;
 			let oldHeader = modal.querySelector('.kv-header');
 			oldHeader.innerHTML = '';
 			oldHeader.insertAdjacentElement('afterBegin',  this.createHeader());
@@ -80,7 +86,7 @@ class Modal{
 		if (content !== false) {
 			let oldContent = modal.querySelector('.kv-content');
 			oldContent.innerHTML = '';
-			typeof content === 'object'? 
+			content instanceof HTMLElement ? 
 				oldContent.insertAdjacentElement('afterBegin', content) : 
 				oldContent.insertAdjacentHTML('afterBegin', content);
 		}
