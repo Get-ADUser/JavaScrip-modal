@@ -9,7 +9,7 @@
 class Modal{
 	
 	/**
-	 * Set modal default parameters 
+	 * Set modal default parameters
 	 *
 	 * @param {string} id - kv-modal
 	 * @param {string} attachTo - body
