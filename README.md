@@ -15,10 +15,10 @@ https://get-aduser.github.io/JavaScrip-modal/
 
 ### Instantiate Modal and set parameters
 
-Modal takes 6 parameter on instanciation.
+Modal takes 6 parameter on instantiation.
 
 1. Id {string} - set custom id for modal.
-2. Element {string} - set element name where modal is added.
+2. Element {string} - set html element name where modal is appended.
 3. Title {string} - set modal title text.
 4. Content {string|HTMLElement} - set modal content (html string or dom element).
 5. Footer {object} - set footer data with object and control buttons and button functions.
