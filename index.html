@@ -21,7 +21,7 @@
 			let demo4footer = {
 				confirm: true,
 				cancelText: 'Cancel',
-				cancelClick: function(){alert("Cance clikced");},
+				cancelClick: function(){alert("Cancel clikced");},
 				confirmText: 'Update',
 				confirmClick: function(){alert('My custom function is called!');}
 			}
@@ -32,14 +32,14 @@
 			let demo6footer = {
 				confirm: true,
 				cancelText: 'Cancel',
-				cancelClick: function(){alert("Cance clikced");},
+				cancelClick: function(){alert("Cancel clikced");},
 				confirmText: 'Update content',
 				confirmClick: function(){callFetch('https://api.github.com/users/hadley/orgs');}
 			}
 			let demo6 = new Modal('custom-id', 'body', 'Modal demo 6', '<div>Call JavaScript Fetch and update content</div>', demo6footer, 'kv-modal-size-xl');
 			
 			function callFetch(){
-				fetch('https://api.github.com/users/hadley/orgs').then((res) => {return res.text()}).then((res) => {demo6.updateModal('Modal demo 6 - conten is now updated', res, false)});
+				fetch('https://api.github.com/users/hadley/orgs').then((res) => {return res.text()}).then((res) => {demo6.updateModal('Modal demo 6 - content is now updated', res, false)});
 			}
 		</script>
 		<style>
